@@ -64,7 +64,10 @@ dugme.addEventListener('click', () =>{
                                             <td>Iznos popusta</td><td class="samoProjekat"> ${Math.round((parseInt(doprinosUradjeno) - parseInt(porezUkupno ))*popustProcenat[0])}</td>
                                             <td class="samoIzgradnja"> ${Math.round(popustProcenat[1] * (parseInt(doprinosUradjeno) - parseInt(porezUkupno )))}</td>
                                             <td class="oba"> ${Math.round(popustProcenat[2] * (parseInt(doprinosUradjeno) - parseInt(porezUkupno)))}</td>`);
-                                            
+    document.querySelector('#iznosNaknade').insertAdjacentHTML('beforeend' ,`
+                                            <td>Iznos naknade</td><td class="samoProjekat"> ${Math.round((parseInt(doprinosUradjeno) - parseInt(porezUkupno ))*(1-popustProcenat[0]))}</td>
+                                            <td class="samoIzgradnja"> ${Math.round((1-popustProcenat[1]) * (parseInt(doprinosUradjeno) - parseInt(porezUkupno )))}</td>
+                                            <td class="oba"> ${Math.round((1-popustProcenat[2]) * (parseInt(doprinosUradjeno) - parseInt(porezUkupno)))}</td>`);                                        
                                         
 
     tabela.style = 'visibility: visible';
