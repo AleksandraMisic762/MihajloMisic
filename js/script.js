@@ -21,6 +21,7 @@ dugme.addEventListener('click', () =>{
     document.querySelector('#iznosPoreza').innerHTML = "";
     document.querySelector('#procenatPopusta').innerHTML = "";
     document.querySelector('#iznosPopusta').innerHTML = "";
+    document.querySelector('#iznosNaknade').innerHTML = "";
 
 
     porezUkupno = parseInt(porezNaProjekat) + parseInt(porezNaIzgradnju);
