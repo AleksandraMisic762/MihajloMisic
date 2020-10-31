@@ -35,7 +35,10 @@ dugme.addEventListener('click', () =>{
 
     for(let i = 0; i< 3; i++){
 
-        if(y[i] < 0.2 * parseInt(doprinosUradjeno)){
+        if(y[i] == 0){
+            popustProcenat[i] = 0;
+        }
+        else if(y[i] < 0.2 * parseInt(doprinosUradjeno)){
             popustProcenat[i] = 0.45;
         } else if(y[i] < 0.3 * parseInt(doprinosUradjeno)){
             popustProcenat[i] = 0.50;
