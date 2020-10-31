@@ -1,0 +1,49 @@
+*{
+    font-family: "Calibri";
+    font-size: 15pt;
+}
+
+table{
+    border: black 1px;
+    border-collapse: collapse;
+    margin:3em;
+    max-width: 60%;
+}
+
+td{
+    width: 300px;
+    align-content: center;
+    justify-content: center;
+    padding-left: 1em;
+}
+
+input {
+    height: 30px;
+    width: 15%;
+    margin-left: 1em;
+    border:1px solid black;
+}
+
+label{
+    height: 40px;
+    min-width: 6em;
+    margin-left: 1em;
+}
+
+.unos{
+    height: 3em;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 15pt;
+    padding: 0.3rem;
+    border: 1px solid black;
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 1em;
+    margin-right: 1em;
+}
