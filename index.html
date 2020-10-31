@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihajlo</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="unos">
+        <label for="doprinosIznos">Doprinos za uradjeno</label>
+        <input type="text" id="doprinosIznos">
+    </div>
+    
+    <div class="unos">
+        <label for="porezProjekatIznos">Porez na projekat</label>
+        <input type="text" id="porezProjekatIznos">
+    </div>
+
+    <div class="unos">
+        <label for="porezIzgradnjaIznos">Porez na izgradnju</label>
+        <input type="text" id="porezIzgradnjaIznos">
+    </div>
+
+
+    <div class="dugme">
+        <button id="btnPrikazi">Prikazi</button>
+    </div>
+    
+
+    <p id="porukaGreske"></p>
+    <table border="1" class="tabela" style="visibility: hidden;"> 
+        <thead>
+        <tr id="headerRed">
+            <th> </th><th>Samo projekat</th><th>Samo izgradnja</th><th>Oba</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="iznosPoreza">
+
+        </tr>
+        <tr id="procenatPopusta">
+
+        </tr>
+        <tr id="iznosPopusta">
+
+        </tr>
+    </tbody>
+    </table> 
+
+<script src="js/script.js"></script>
+</body>
+</html>
