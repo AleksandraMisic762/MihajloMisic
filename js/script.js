@@ -45,8 +45,6 @@ dugme.addEventListener('click', () =>{
             popustProcenat[i] = 0.50;
         } else if(y[i] < 0.6 * parseInt(doprinosUradjeno)){
             popustProcenat[i] = 0.55;
-        } else {
-            popustProcenat[i] = 'Donacija?'
         }
 
     }
@@ -62,7 +60,7 @@ dugme.addEventListener('click', () =>{
                                             <td class="samoIzgradnja">${Math.round(popustProcenat[1] * 100)}%</td>
                                             <td class="oba">${Math.round(popustProcenat[2] * 100)}%</td>`);
     document.querySelector('#iznosPopusta').insertAdjacentHTML('beforeend' ,`
-                                            <td>Iznos popusta</td><td class="samoProjekat"> ${Math.round((parseInt(doprinosUradjeno) - y[0] )*popustProcenat[0])}</td>
+                                            <td>Iznos popusta</td><td class="samoProjekat"> ${Math.round((parseInt(doprinosUradjeno) - y[0] ) * popustProcenat[0] )}</td>
                                             <td class="samoIzgradnja"> ${Math.round(popustProcenat[1] * (parseInt(doprinosUradjeno) - y[1] ))}</td>
                                             <td class="oba"> ${Math.round(popustProcenat[2] * (parseInt(doprinosUradjeno) - parseInt(porezUkupno)))}</td>`);
     document.querySelector('#iznosNaknade').insertAdjacentHTML('beforeend' ,`
